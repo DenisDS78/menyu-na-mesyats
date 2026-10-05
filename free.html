@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать бесплатную версию — Меню на 3 дня</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .free-download-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+        }
+        
+        .download-box {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .download-box h1 {
+            color: #FF6B35;
+            margin-bottom: 20px;
+        }
+        
+        .download-box p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .download-link {
+            display: block;
+            background: #FF6B35;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: all 0.3s;
+        }
+        
+        .download-link:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+        }
+        
+        .file-info {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .upsell-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        .upsell-box h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .discount-badge {
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="free-download-page">
+        <div class="download-box">
+            <h1>🎉 Ваша бесплатная версия готова!</h1>
+            <p>Скачайте меню на 3 дня и попробуйте сами, насколько это удобно.</p>
+            
+            <a href="Menyu_na_3_dnya_dlya_3_chelovek.docx" class="download-link" download>
+                📥 Скачать меню на 3 дня (DOCX)
+            </a>
+            <p class="file-info">Файл: Word документ, ~150 КБ</p>
+            
+            <div class="upsell-box">
+                <h3>Понравилось? Купите полную версию! 
+                    <span class="discount-badge">-50%</span>
+                </h3>
+                <p>Получите ещё 27 дней меню со списками покупок и календарём</p>
+                <ul style="text-align: left; margin: 20px 0;">
+                    <li>✓ 30 полных дней меню</li>
+                    <li>✓ Списки покупок по неделям</li>
+                    <li>✓ Общий календарь на месяц</li>
+                    <li>✓ Примерная стоимость каждого дня</li>
+                </ul>
+                <div style="margin: 30px 0;">
+                    <span style="text-decoration: line-through; color: #999; font-size: 1.2rem;">990 ₽</span>
+                    <span style="font-size: 2.5rem; font-weight: 700; color: #FF6B35; margin-left: 15px;">490 ₽</span>
+                </div>
+                <a href="index.html#buy" class="btn btn-primary btn-large">Купить полную версию</a>
+                <p style="margin-top: 20px; color: #666; font-size: 0.9rem;">
+                    💳 Безопасная оплата. Мгновенное получение файлов.
+                </p>
+            </div>
+            
+            <p style="margin-top: 40px; color: #999; font-size: 0.9rem;">
+                <a href="index.html" style="color: #FF6B35;">← Вернуться на главную</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Отслеживание скачивания
+        document.querySelector('.download-link').addEventListener('click', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'download', {
+                    'event_category': 'Free Version',
+                    'event_label': '3 Days Menu'
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
